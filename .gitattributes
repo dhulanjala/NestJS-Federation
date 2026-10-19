@@ -1,0 +1,4 @@
+# Ignore static HTML or public folders in language stats
+public/* linguist-vendored=true
+docs/* linguist-generated=true
+coverage/* linguist-generated=true
