@@ -1,0 +1,17 @@
+{
+  "name": "nestjs-federation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -n users,animations,projects,gateway -c blue,green,yellow,magenta \"npm:start --prefix users\" \"npm:start --prefix animations\" \"npm:start --prefix projects\" \"npm:start --prefix gateway\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}

@@ -1,0 +1,24 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+schema {
+  query: Query
+}
+
+type Animation @key(fields: "id") {
+  durationMs: Int!
+  id: ID!
+  ownerId: ID!
+  title: String!
+}
+
+type Query {
+  animation(id: ID!): Animation
+  animations: [Animation!]!
+}
+
+type User @key(fields: "id") {
+  animations: [Animation!]!
+  id: ID!
+}

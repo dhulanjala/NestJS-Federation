@@ -1,0 +1,18 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+schema {
+  query: Query
+}
+
+type Query {
+  user(id: ID!): User
+  users: [User!]!
+}
+
+type User @key(fields: "id") {
+  email: String!
+  id: ID!
+  name: String!
+}
